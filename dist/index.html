@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-wrapper content-wrapper">
+            <a href="./index.html" class="logo-link">
+                <img src="./res/image.png" alt="Page Logotype" class="logo-img">
+            </a>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item" data-id="pokedex">Pokédex</li>
+                    <li class="nav-item" data-id="search">Search Pokémon</li>
+                    <li class="nav-item" data-id="generate">Generate Pokémon</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Pokedex Section -->
+    <section class="pokedex-section section" id="pokedexSection">
+        <div class="content-wrapper">
+            <section class="pokedex-grid" id="pokedexContainer">
+
+            </section>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section section" id="searchSection">
+        <div class="content-wrapper">
+            <h1>Search Pokémon</h1>
+            <input id="searchField" type="text" required placeholder="skriv in pokemon...">
+            <button id="searchButton">Search</button>
+            <div class="content-wrapper">
+                <section class="pokedex-grid" id="pokemonContainer">
+                  
+                </section>
+            </div>
+        </div>        
+    </section>
+
+    <!-- Generator Section -->
+    <section class="generator-section section" id="generatorSection">
+        <div class="content-wrapper">
+            <h1>Generate Pokémon</h1>
+            
+            <button class="generatePokemonByType" id="water">Water</button>
+            <button class="generatePokemonByType" id="elecricity">Elecricity</button>
+            <button class="generatePokemonByType" id="fighting">Fighting</button>
+            <button class="generatePokemonByType" id="grass">Grass</button>
+            <button class="generatePokemonByType" id="fairy">Fairy</button>
+            <button class="generatePokemonByType" id="rock">Rock</button>
+            <button class="generatePokemonByType" id="ghost">Ghost</button>
+            <button class="generatePokemonByType" id="dark">Dark</button>
+            <button class="generatePokemonByType" id="fire">Fire</button>
+            <button class="generatePokemonByType" id="psychic">Psychic</button>
+            <button class="generatePokemonByType" id="bug">Bug</button>
+            <button class="generatePokemonByType" id="ice">Ice</button>
+            <button class="generatePokemonByType" id="posion">Posion</button>
+            <button class="generatePokemonByType" id="dragon">Dragon</button>
+            <button class="generatePokemonByType" id="flying">Flying</button>
+            <button class="generatePokemonByType" id="steel">Steel</button>
+            <button class="generatePokemonByType" id="normal">Normal</button>
+            <button class="generatePokemonByType" id="ground">Ground</button>
+
+            <section class="pokedex-grid" id="pokemonTypeContainer">
+                  
+            </section>
+    
+    </section>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

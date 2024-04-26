@@ -1,0 +1,124 @@
+:root {
+    --bg-yellow: #FFFF01;
+    --bg-yellow-hover: #e0e002;
+    --bg-cream: #fffdd0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-cream);
+}
+
+.content-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.d-none {
+    display: none;
+}
+
+.page-header {
+    width: 100%;
+    background-color: var(--bg-yellow);
+    margin-top: 2rem;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo-link {
+    width: 10rem;
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: var(--bg-yellow-hover);
+    color: white;
+}
+
+.pokedex-grid {
+    display: grid;
+    width: 100%;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 4px solid red;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+    border-radius: 0;
+}
+
+.pokemon-card img {
+    width: 8rem;
+    background-color: #3e2828;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.card-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-stat {
+    padding: .5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+}
+
+.card-stat--span-two {
+    grid-column: auto / span 2;
+}
+
+.generatePokemonByType {
+    width: 13%;
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.generatePokemonByType:hover {
+    transform: scale(1.05);
+    border-radius: 0;
+}
+
